@@ -16,6 +16,7 @@
   body {
     @apply bg-canvas text-charcoal font-sans;
     font-feature-settings: 'ss01', 'liga', 'kern';
+    overflow-x: hidden; /* mobile safety net against stray horizontal overflow */
   }
 
   ::selection {
@@ -45,6 +46,7 @@
   }
 
   .link-underline {
+    overflow-wrap: anywhere; /* let long emails / URLs wrap on narrow screens */
     background-image: linear-gradient(currentColor, currentColor);
     background-size: 0% 1px;
     background-repeat: no-repeat;
