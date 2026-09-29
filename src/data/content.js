@@ -234,7 +234,7 @@ export const studio = {
   heroFoot: "Designing Spaces · Creating Experiences",
   introLead:
     "LuxiMaa Interiors is a Greater Faridabad interior design studio led by designer LuxiMaa, creating personalized residential and commercial interiors across Delhi NCR. Luxury, crafted for you — thoughtful spaces built around how you live, in warm, timeless materials and considered detail.",
-  address: "Bansa Vega Street 41, First Floor, Sector 82, Greater Faridabad, Haryana 121002",
+  address: "Mansha Vega Street 41, First Floor, Sector 82, Greater Faridabad, Haryana 121002",
   phoneDisplay: "+91 99112 53371 · +91 99914 56100",
   phoneHref: "+919911253371",
   email: "luximainteriors@gmail.com",
