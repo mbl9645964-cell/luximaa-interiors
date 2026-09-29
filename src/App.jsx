@@ -10,6 +10,7 @@ import Process from './components/Process'
 import Testimonials from './components/Testimonials'
 import Materials from './components/Materials'
 import CTASection from './components/CTASection'
+import BookConsultation from './components/BookConsultation'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -29,6 +30,7 @@ export default function App() {
         <Testimonials />
         <Materials />
         <CTASection />
+        <BookConsultation />
         <Contact />
       </main>
       <Footer />
