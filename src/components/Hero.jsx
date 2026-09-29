@@ -9,18 +9,23 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '18%'])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.12])
   const overlayOpacity = useTransform(scrollYProgress, [0, 1], [1, 0.4])
-  const hero = responsive(img.hero)
+  const poster = responsive(img.hero).src
+  const video = `${import.meta.env.BASE_URL}film-0325.mp4`
 
   return (
     <section ref={ref} id="top" className="relative h-[100svh] w-full overflow-hidden bg-ink">
-      {/* Parallax background */}
+      {/* Parallax video background */}
       <motion.div style={{ y, scale }} className="absolute inset-0 h-[112%] w-full">
-        <img
-          {...hero}
-          sizes="100vw"
-          alt="A sunlit luxury residential living space with warm timber, natural stone and layered lighting"
-          fetchpriority="high"
+        <video
           className="h-full w-full object-cover"
+          src={video}
+          poster={poster}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
         />
       </motion.div>
 
